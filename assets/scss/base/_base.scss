@@ -15,6 +15,10 @@ body {
     background-position: top -30rem left -30rem, bottom -30rem right -30rem;
   }
 
+  @include a.breakpoint(large) {
+    background-position: top -20rem left -15rem, bottom -20rem right -15rem;
+  }
+
   & > * {
     place-self: center;
   }
