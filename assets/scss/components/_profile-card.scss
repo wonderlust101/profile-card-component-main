@@ -41,6 +41,7 @@
     width: 100%;
     text-align: center;
     padding: 2rem;
+    border-top: 2px solid var(--clr-neutral-color-light-grey);
 
     & > * {
       display: flex;
