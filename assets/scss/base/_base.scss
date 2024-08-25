@@ -3,3 +3,19 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  display: grid;
+  background-color: var(--clr-background);
+  background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+  background-position: top -30rem left -45rem, bottom -30rem right -45rem;
+  background-repeat: no-repeat;
+
+  @include a.breakpoint(medium) {
+    background-position: top -30rem left -30rem, bottom -30rem right -30rem;
+  }
+
+  & > * {
+    place-self: center;
+  }
+}

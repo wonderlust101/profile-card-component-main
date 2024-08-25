@@ -1,0 +1,51 @@
+.profile-card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 100%;
+  width: min(95%, 28rem);
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--clr-white);
+
+  &__profile-background {
+    width: 100%;
+  }
+
+  &__user {
+    display: grid;
+    gap: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__profile-image {
+    width: 8rem;
+    margin-top: -4rem;
+    border-radius: 50rem;
+    border: 5px solid var(--clr-white);
+  }
+  &__age {
+    margin-left: 0.5rem;
+    color: var(--clr-primary-color-dark-greyish-blue);
+    font-weight: 500;
+  }
+
+  &__location {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+
+    & > * {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+}

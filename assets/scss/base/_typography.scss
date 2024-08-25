@@ -2,5 +2,17 @@
 
 h1, h2, h3, h4,
 h5, h6, p {
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--clr-primary-color-very-dark-desaturated-blue);
+}
 
+h2 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--clr-primary-color-dark-greyish-blue);
+  letter-spacing: 0.1rem;
 }
